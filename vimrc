@@ -18,6 +18,7 @@ set number " or set nu
 set relativenumber
 " set norelativenumber
 
+" searching & highlight
 set hlsearch
 exec "nohlsearch"
 set incsearch
