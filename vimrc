@@ -34,6 +34,16 @@ set autoread
 
 
 """ key mapping
+
+"" Set <LEADER> as <SPACE>
+let mapleader=" "
+
+"" search
+map <LEADER><CR> :nohlsearch<CR>
+
+" Press space twice to jump to the next '<++>' and edit it
+map <LEADER><LEADER> <Esc>/<++><CR>:nohlsearch<CR>c4l
+
 map s <nop>
 map S :w<CR>
 
