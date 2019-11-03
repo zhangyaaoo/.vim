@@ -37,7 +37,10 @@ set autoread
 map s <nop>
 map S :w<CR>
 
-"" split the screens to up (horizontal), down (horizontal), left (vertical), right (vertical)
+"" split the screens to up (horizontal),
+""                    down (horizontal),
+""                    left (vertical),
+""                    right (vertical)
 map sj :set nosplitbelow<CR>:split<CR>:set splitbelow<CR>
 map sk :set splitbelow<CR>:split<CR>
 map sh :set nosplitright<CR>:vsplit<CR>:set splitright<CR>
