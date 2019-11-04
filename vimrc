@@ -62,6 +62,18 @@ map <down> :res -2<CR>
 map <left> :vertical resize-2<CR>
 map <right> :vertical resize+2<CR>
 
+"" Markdowm Sheet
+noremap sb :call EchoMarkdownSheet()<CR>
+func EchoMarkdownSheet()
+	let line = line('.')
+	call setline(line+1,"")
+	call setline(line+2,"| <++> | <++> |")
+	call setline(line+3,"| --- | --- |")
+	call setline(line+4,"| <++> | <++> |")
+	call setline(line+5,"| <++> | <++> |")
+	call setline(line+6,"")
+endfunc
+
 """ Plug Install
 " Specify a directory for plugins
 " - For Neovim: stdpath('data') . '/plugged'
