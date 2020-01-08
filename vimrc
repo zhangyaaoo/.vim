@@ -86,6 +86,10 @@ Plug 'vim-airline/vim-airline'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 
+"" Nerdtree
+Plug 'scrooloose/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+
 " Initialize plugin system
 call plug#end()
 """ Plug Install END
@@ -95,3 +99,7 @@ let g:UltiSnipsExpandTrigger           = '<C-e>'
 let g:UltiSnipsJumpForwardTrigger      = '<C-n>'
 let g:UltiSnipsJumpBackwardTrigger     = '<C-b>'
 
+" Nerdtree's setting
+noremap tt :NERDTreeToggle<CR>
+
+" Nerdtree-git's setting
