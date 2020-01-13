@@ -3,7 +3,8 @@
 "   / /  \ V /   \ \ / / | || |\/| | |_) | |    
 "  / /_   | |     \ V /  | || |  | |  _ <| |___ 
 " /____|  |_|      \_/  |___|_|  |_|_| \_\\____|
-"                                               
+"
+" generate by cmd: figlet ZY VIMRC
 
 """ basic setting
 set wrap
@@ -89,6 +90,9 @@ Plug 'honza/vim-snippets'
 "" Nerdtree
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
+
+"" YouCompleteMe
+Plug 'Valloric/YouCompleteMe'
 
 " Initialize plugin system
 call plug#end()
