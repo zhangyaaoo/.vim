@@ -94,6 +94,8 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 "" YouCompleteMe
 Plug 'Valloric/YouCompleteMe'
 
+Plug 'junegunn/vim-peekaboo'
+
 " Initialize plugin system
 call plug#end()
 """ Plug Install END
