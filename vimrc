@@ -7,19 +7,31 @@
 " generate by cmd: figlet ZY VIMRC
 
 """ basic setting
+" encoding
+set encoding=utf-8
+let &termencoding=&encoding
+set fileencodings=utf-8,gbk,ucs-bom,cp936
+set ambiwidth=double
+
+" colorscheme
+colorscheme elflord
+" colorscheme delek
+
+" display
 set wrap
 set ruler
 set nobackup
 set cursorline
 set autoindent
-
+set foldmethod=indent
 set tabstop=4
 set scrolloff=5
-
 set number " or set nu
 " set nonu
 set relativenumber
 " set norelativenumber
+set showcmd
+set wildmenu
 
 " searching & highlight
 set hlsearch
@@ -28,11 +40,7 @@ set incsearch
 set ignorecase
 set smartcase
 
-set showcmd
-set wildmenu
-
 set autoread
-
 
 """ key mapping
 
@@ -84,15 +92,15 @@ call plug#begin('~/.vim/plugged')
 Plug 'vim-airline/vim-airline'
 
 "" Snippets
-Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
+"Plug 'SirVer/ultisnips'
+"Plug 'honza/vim-snippets'
 
 "" Nerdtree
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
 "" YouCompleteMe
-Plug 'Valloric/YouCompleteMe'
+"Plug 'Valloric/YouCompleteMe'
 
 Plug 'junegunn/vim-peekaboo'
 
