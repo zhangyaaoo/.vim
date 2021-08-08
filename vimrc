@@ -7,21 +7,26 @@
 " generate by cmd: figlet ZY VIMRC
 
 """ basic setting
-" encoding
+"" encoding
 set encoding=utf-8
 let &termencoding=&encoding
 set fileencodings=utf-8,gbk,ucs-bom,cp936
 set ambiwidth=double
 
-" colorscheme
+"" colors
 colorscheme elflord
 " colorscheme delek
+" hi clear CursorLine
+" hi link CursorLine Visual
+" hi clear CursorLineNr
+" hi link CursorLineNr Visual
 
-" display
+"" display
 set wrap
 set ruler
 set nobackup
 set cursorline
+" set cursorcolumn
 set autoindent
 set foldmethod=indent
 set tabstop=4
@@ -33,7 +38,7 @@ set relativenumber
 set showcmd
 set wildmenu
 
-" searching & highlight
+"" searching & highlight
 set hlsearch
 exec "nohlsearch"
 set incsearch
