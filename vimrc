@@ -13,6 +13,9 @@ let &termencoding=&encoding
 set fileencodings=utf-8,gbk,ucs-bom,cp936
 set ambiwidth=double
 
+"" compatible
+set nocp " same as set nocompatible
+
 "" colors
 colorscheme elflord
 " colorscheme delek
@@ -47,7 +50,16 @@ set smartcase
 
 set autoread
 
+"" edit
+
+"" uncomment one of them, if you needed
+"" To fix not working backspace key in the insert mode, set backspace=2
+" set backspace=0 " same as set backspace= (Vi compatible)
+" set backspace=1 " same as set backspace=indent,eol
+set backspace=2 " same as set backspace=indent,eol,start
+
 """ key mapping
+inoremap jj <ESC>
 
 "" Set <LEADER> as <SPACE>
 let mapleader=" "
